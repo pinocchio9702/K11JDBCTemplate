@@ -1,4 +1,4 @@
-package model;
+package springboard.model;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
