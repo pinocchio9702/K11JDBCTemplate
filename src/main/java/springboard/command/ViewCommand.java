@@ -22,7 +22,7 @@ public class ViewCommand implements BbsCommandImpl{
 		JDBCTemplateDAO dao = new JDBCTemplateDAO();
 		SpringBbsDTO dto = new SpringBbsDTO();
 		dto = dao.view(idx);
-		if(dto != null) {
+		if(dto.getContents() != null) {
 		//줄바꿈 처리위해 <br/>로 변경
 		dto.setContents(dto.getContents().replace("\r\n", "<br/>"));
 		}
